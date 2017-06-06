@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.1'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# bcrypt for passwords
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
