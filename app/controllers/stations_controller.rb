@@ -1,5 +1,6 @@
 class StationsController < ApplicationController
   before_action :set_station, only: [:show, :update, :destroy]
+  skip_before_action :authorize_request, only: [:index, :show]
 
   # get /stations
   def index
@@ -9,8 +10,8 @@ class StationsController < ApplicationController
 
   # post /stations
   def create
-    @station = Station.create!(station_params)
-    json_response(@station)
+    @station = current_user.stations.create!(station_params)
+    json_response(@station, :created)
   end
 
   # get /station/:id

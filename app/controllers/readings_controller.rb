@@ -2,6 +2,7 @@ class ReadingsController < ApplicationController
 
   before_action :set_station
   before_action :set_station_reading, only: [:show, :update, :destroy]
+  skip_before_action :authorize_request, only: [:index, :show]
 
   # GET /stations/:station_id/readings
   def index

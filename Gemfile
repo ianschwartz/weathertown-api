@@ -15,6 +15,8 @@ gem 'puma', '~> 3.7'
 # bcrypt for passwords
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'jwt'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
