@@ -8,8 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgresql as the database for Active Record
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # bcrypt for passwords
@@ -25,6 +25,7 @@ gem 'faker'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem 'sqlite3'
 end
 
 group :test do
@@ -32,6 +33,11 @@ group :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'database_cleaner'
 end
+
+group :production do
+  gem 'pg'
+end
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
