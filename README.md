@@ -19,7 +19,7 @@ To view all readings from one station:
 https://weathertown-ma.herokuapp.com/stations/2
 
 To view a specific reading from a specific station:
-https://weathertown-ma.herokuapp.com/2/readings/1
+https://weathertown-ma.herokuapp.com/stations/2/readings/1
 
 
 

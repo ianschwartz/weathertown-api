@@ -13,13 +13,13 @@ pretty much every language as you please. If you do something with it, let
 us know! 
 
 To view all readings from all weather stations:
-[https://weathertown-ma.herokuapp.com/stations]
+https://weathertown-ma.herokuapp.com/stations
 
 To view all readings from one station:
-(https://weathertown-ma.herokuapp.com/stations/STATION_ID)[https://weathertown-ma.herokuapp.com/stations/2]
+https://weathertown-ma.herokuapp.com/stations/2
 
 To view a specific reading from a specific station:
-(https://weathertown-ma.herokuapp.com/stations/STATION_ID/readings/READING_ID)[https://weathertown-ma.herokuapp.com/2/readings/1]
+https://weathertown-ma.herokuapp.com/2/readings/1
 
 
 
