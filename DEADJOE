@@ -1,0 +1,35 @@
+
+*** These modified files were found in JOE when it aborted on Thu Jun  8 17:00:06 2017
+*** JOE was aborted by UNIX signal 1
+
+*** File 'db/seeds.rb'
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+user = User.create(
+station = Station.create(name: Faker::Lorem.word, created_by: User.firs, zipcode: Faker::Number.number(5))
+50.times do  
+  station.readings.create(temp: Faker::Number.decimal(2), humidity: Faker::Number.decimal(2))
+end
+*** File '(Unnamed)'
+simon.py
+part-2-draft.txt
+Gemfile~
+Gemfile
+app/serializers/todo_serializer.rb
+Gemfile
+Gemfile
+db/seeds.rb
+db/seeds.rb
+db/seeds.rb
+db/seeds.rb
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
