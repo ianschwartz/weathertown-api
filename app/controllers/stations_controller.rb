@@ -4,7 +4,7 @@ class StationsController < ApplicationController
 
   # get /stations
   def index
-    @stations = Station.all
+    @stations = Station.all.paginate(page: params[:page], per_page: 20)
     json_response(@stations)
   end
 
