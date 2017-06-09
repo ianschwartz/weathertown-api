@@ -1,7 +1,7 @@
 class ReadingsController < ApplicationController
 
-  before_action :set_station
-  before_action :set_station_reading, only: [:show, :update, :destroy]
+  before_action :set_station, except: :show
+  before_action :set_station_reading, only: [:update, :destroy]
   skip_before_action :authorize_request, only: [:index, :show]
 
   # GET /stations/:station_id/readings
@@ -11,6 +11,7 @@ class ReadingsController < ApplicationController
 
   # GET /stations/:station_id/readings/:id
   def show
+    @reading = Reading.find(params[:id])
     json_response(@reading)
   end
 
